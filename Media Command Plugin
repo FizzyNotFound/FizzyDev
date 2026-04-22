@@ -1,0 +1,35 @@
+package io.fizzydev.commands;
+
+import org.bukkit.ChatColor;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+public class MediaCommand implements CommandExecutor {
+
+    @Override
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        
+        // Ensure only players can run this (prevent console errors)
+        if (!(sender instanceof Player)) {
+            sender.sendMessage("This command is for players only!");
+            return true;
+        }
+
+        Player player = (Player) sender;
+
+        // Custom help/info message
+        player.sendMessage("");
+        player.sendMessage(ChatColor.AQUA + "" + ChatColor.BOLD + "FIZZY NETWORK LINKS");
+        player.sendMessage(ChatColor.GRAY + "Stay connected with our community:");
+        player.sendMessage("");
+        player.sendMessage(ChatColor.WHITE + "» " + ChatColor.BLUE + "Discord: " + ChatColor.GRAY + "discord.gg/fizzy");
+        player.sendMessage(ChatColor.WHITE + "» " + ChatColor.LIGHT_PURPLE + "Store: " + ChatColor.GRAY + "store.fizzydev.io");
+        player.sendMessage(ChatColor.WHITE + "» " + ChatColor.GOLD + "Website: " + ChatColor.GRAY + "fizzynotfound.github.io");
+        player.sendMessage("");
+        player.sendMessage(ChatColor.AQUA + "§m---------------------------------------");
+
+        return true;
+    }
+}
