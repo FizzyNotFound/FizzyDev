@@ -1,0 +1,79 @@
+# FizzyDev - Full Stack Systems Specialist
+# Professional TAB configuration for Lifesteal/Network environments
+
+header-footer:
+  enabled: true
+  designs:
+    default:
+      display-condition: "%world%!=disabledworld"
+      header:
+        - "&b&m                                          "
+        - "&b&lFIZZY &f&lNETWORK"
+        - "&7Server: &f%server%"
+        - ""
+      footer:
+        - ""
+        - "&fPlayers: &b%online%/%max_players% &8| &fPing: &b%player_ping%ms"
+        - "&b&lfizzynotfound.github.io"
+        - "&b&m                                          "
+
+tablist-name-formatting:
+  enabled: true
+  align-tabs-gen-1.16: true # Keeps names neat on newer versions
+
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  # Sorting groups from highest to lowest
+  sorting-types:
+    - "GROUPS:owner,admin,mod,helper,builder,mvp,vip,default"
+    - "PLACEHOLDER_A_TO_Z:%player%"
+  case-sensitive-sorting: false
+  disable-condition: "%world%=disabledworld"
+
+# This shows health under the name - very important for Lifesteal servers
+belowname-objective:
+  enabled: true 
+  fancy-value: "&c%player_health% &4❤"
+  value: "%player_health%"
+  title: "&cHealth"
+
+scoreboard:
+  enabled: true
+  scoreboards:
+    main-board:
+      title: "&b&lFIZZY &f&lNETWORK"
+      lines:
+        - "&7&m------------------"
+        - " &b☄ &fRank: &b%luckperms_prefix%"
+        - " &b🗡 &fKills: &f%statistic_player_kills%"
+        - " &b☠ &fDeaths: &f%statistic_deaths%"
+        - " &b★ &fPoints: &f%playerpoints_points%"
+        - " &a$ &fMoney: &a%vault_eco_balance_formatted%"
+        - " &b⌚ &fPlaytime: &f%statistic_hours_played%h"
+        - ""
+        - " &fTPS: &b%server_tps_1_colored%"
+        - "&7&m------------------"
+        - "&bdiscord.gg/fizzy" # Change this to your actual link
+
+placeholders:
+  date-format: dd.MM.yyyy
+  time-format: "[HH:mm:ss]"
+  register-tab-expansion: true
+
+placeholder-output-replacements:
+  "%afk%":
+    true: " &8[&cAFK&8]"
+    false: ""
+
+# Database setup - disabled by default for performance
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: tab
+  username: user
+  password: password
+
+config-version: 2
