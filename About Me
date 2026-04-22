@@ -1,18 +1,29 @@
 # Hey, I'm Fizzy ⚡
 
-I'm a Full Stack Minecraft Server Developer. I specialize in building the infrastructure, handling the visuals, and making sure the backend stays stable under pressure.
+I’m a Full Stack Minecraft Server Developer with 3 years of experience. I’ve worked with basically every plugin and setup out there. I handle everything from building the network to setting up custom 3D models and killing server lag.
+
+Right now, I’m mastering the systems and setup side while I learn Java to start building my own custom plugins from scratch.
 
 ### 🛠 What I do:
-* **Full Server Setups:** From Bungee/Velocity networks to high-performance Paper/Purpur setups. 
-* **Plugin Specialist:** I handle full configuration, database linking, and deep-level troubleshooting. If your console is throwing errors, I’m the guy who finds the fix.
-* **3D & Visuals:** I'm an expert at implementing **MCModel**, **ItemsAdder**, and **Oraxen**. I handle the technical side of getting custom 3D assets in-game smoothly.
-* **Performance:** I use Spark and Timings to hunt down lag. I’m obsessed with keeping servers at a constant 20.0 TPS.
 
-### 🚀 Roadmap
-Right now, I'm in the **learning phase for Java**. I'm moving from configuring the best plugins on the market to building my own custom solutions.
+* **Every Kind of Setup:** I build BungeeCord/Velocity networks and high-performance Paper/Purpur servers. I know my way around almost every plugin's config.
+* **The "Fixer":** If your console is throwing errors or your plugins are crashing, I’m the guy who finds the fix. I handle all the technical stuff like MySQL databases and complex permissions.
+* **MCModels & 3D Assets:** I’m an expert at getting **MCModel, ItemsAdder, and Oraxen** working. I handle the resource packs and make sure custom 3D items work perfectly in-game.
+* **Optimization:** I don't settle for lag. I use Spark and Timings to hunt down what’s dropping your TPS and I optimize the hardware and files to keep it at a smooth 20.0.
 
-### 👾 Contact
+### 🚀 Currently Learning:
+I’ve got the setup and configuration side down, so now I’m deep-diving into **Java coding**. I’m moving toward writing my own plugins so I can offer fully custom features.
+
+---
+
+### 📁 My Work (All in this Repo):
+* **[TAB & Scoreboard Config](TAB-Config.yml)** - Clean Lifesteal setup with HEX colors.
+* **[Join Listener Code](JoinListener.java)** - My Java practice for custom join/quit messages.
+* **[Custom Media Command](MediaCommand.java)** - Java logic for a /discord and /links command.
+
+---
+
+### 👾 Contact Me:
 * **Discord:** `fizzynotfound`
-* **GitHub:** [FizzyDev](https://github.com/FizzyDev)
 
-*Hit me up if you need a server architect who actually knows how to optimize hardware.*
+**If you need a server dev who actually knows how to optimize hardware and get 3D models working properly, hit me up.**
