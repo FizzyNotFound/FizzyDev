@@ -1,29 +1,30 @@
-# Hey, I'm Fizzy ⚡
+Hey, I'm Fizzy ⚡
+FizzyNotFound here. I’ve spent the last 3 years grinding in the technical side of Minecraft servers. I’ve officially moved past just being the "config guy" and transitioned into actual development.
 
-I’m a Full Stack Minecraft Server Developer with 3 years of experience. I’ve worked with basically every plugin and setup out there. I handle everything from building the network to setting up custom 3D models and killing server lag.
+I don't just "setup" servers anymore—I build them. Having learned C and Java, I now create custom Java plugins from scratch. I use that low-level knowledge to write logic that isn't just functional, but actually optimized to stay at a locked 20.0 TPS under heavy load.
 
-Right now, I’m mastering the systems and setup side while I learn Java to start building my own custom plugins from scratch.
+🛠 What I actually do:
+Custom Plugin Development: I build Java plugins from the ground up. If a public plugin doesn't do what you need, I write the code to make it happen.
 
-### 🛠 What I do:
+The "Fixer": I’m the guy you call when the console is screaming or the MySQL database is cooked. I use my understanding of code to find the root cause of crashes that others miss.
 
-* **Every Kind of Setup:** I build BungeeCord/Velocity networks and high-performance Paper/Purpur servers. I know my way around almost every plugin's config.
-* **The "Fixer":** If your console is throwing errors or your plugins are crashing, I’m the guy who finds the fix. I handle all the technical stuff like MySQL databases and complex permissions.
-* **MCModels & 3D Assets:** I’m an expert at getting **MCModel, ItemsAdder, and Oraxen** working. I handle the resource packs and make sure custom 3D items work perfectly in-game.
-* **Optimization:** I don't settle for lag. I use Spark and Timings to hunt down what’s dropping your TPS and I optimize the hardware and files to keep it at a smooth 20.0.
+Core Infrastructure: I build high-performance BungeeCord/Velocity networks and optimized Paper/Purpur setups. No bloat, just speed.
 
-### 🚀 Currently Learning:
-I’ve got the setup and configuration side down, so now I’m deep-diving into **Java coding**. I’m moving toward writing my own plugins so I can offer fully custom features.
+Optimization Mastery: I’m obsessed with performance. I use Spark and Timings to hunt down lag and kill it. I optimize at the hardware and logic level to ensure the server scales.
 
----
+🚀 Technical Background:
+I’ve put in the work to learn C and Java properly. This means I actually understand how memory and systems work, which allows me to bridge the gap between complex server architecture and clean, high-performance code.
 
-### 📁 My Work (All in this Repo):
-* **[TAB & Scoreboard Config](TAB-Config.yml)** - Clean Lifesteal setup with HEX colors.
-* **[Join Listener Code](JoinListener.java)** - My Java practice for custom join/quit messages.
-* **[Custom Media Command](MediaCommand.java)** - Java logic for a /discord and /links command.
+📁 My Work:
+Join Listener Code - Custom Java implementation for player events.
 
----
+TAB & Scoreboard Config - Optimized Lifesteal setup with HEX styling.
 
-### 👾 Contact Me:
-* **Discord:** `fizzynotfound`
+More Coming Soon!
 
-**If you need a server dev who actually knows how to optimize hardware and get 3D models working properly, hit me up.**
+👾 Get in Touch:
+Discord: fizzynotfound
+
+GitHub: https://github.com/FizzyNotFound
+
+Portfolio: https://fizzydev.carrd.co
