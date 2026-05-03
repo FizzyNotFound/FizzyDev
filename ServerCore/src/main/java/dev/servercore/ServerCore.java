@@ -5,9 +5,12 @@ import dev.servercore.listeners.*;
 import dev.servercore.managers.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import javax.naming.directory.Attributes;
+
 public class ServerCore extends JavaPlugin {
 
     private static ServerCore instance;
+    public Attributes tpaRequests;
     private PlayerDataManager playerDataManager;
     private RankManager rankManager;
     private WarpManager warpManager;

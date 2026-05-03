@@ -33,7 +33,7 @@ public class TpaCommand implements CommandExecutor {
             return true;
         }
 
-        plugin.tpaRequests.put(target.getUniqueId(), player.getUniqueId());
+        plugin.tpaRequests.put(String.valueOf(target.getUniqueId()), player.getUniqueId());
 
         player.sendMessage(ChatColor.GREEN + "Teleport request sent to " + target.getName() + ".");
         target.sendMessage(ChatColor.YELLOW + player.getName() + " wants to teleport to you.");

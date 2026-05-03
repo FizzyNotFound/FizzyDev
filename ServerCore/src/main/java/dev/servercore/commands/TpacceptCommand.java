@@ -7,6 +7,8 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+
+import javax.naming.directory.Attribute;
 import java.util.UUID;
 
 public class TpacceptCommand implements CommandExecutor {
@@ -24,14 +26,14 @@ public class TpacceptCommand implements CommandExecutor {
         }
 
         // Check if there is a pending request for this player
-        UUID requesterUUID = plugin.tpaRequests.get(player.getUniqueId());
+        Attribute requesterUUID = plugin.tpaRequests.get(String.valueOf(player.getUniqueId()));
 
         if (requesterUUID == null) {
             player.sendMessage(ChatColor.RED + "You do not have any pending teleport requests.");
             return true;
         }
 
-        Player requester = Bukkit.getPlayer(requesterUUID);
+        Player requester = Bukkit.getPlayer(String.valueOf(requesterUUID));
 
         if (requester != null && requester.isOnline()) {
             requester.teleport(player.getLocation());
@@ -42,7 +44,7 @@ public class TpacceptCommand implements CommandExecutor {
         }
 
         // Clear the request after it is processed
-        plugin.tpaRequests.remove(player.getUniqueId());
+        plugin.tpaRequests.remove(String.valueOf(player.getUniqueId()));
         return true;
     }
 }

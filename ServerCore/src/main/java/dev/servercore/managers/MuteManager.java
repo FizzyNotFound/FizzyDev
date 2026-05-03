@@ -93,4 +93,7 @@ public class MuteManager {
         try { muteConfig.save(muteFile); }
         catch (IOException e) { plugin.getLogger().warning("Could not save mutes.yml"); }
     }
+
+    public void setMuted(@org.jetbrains.annotations.NotNull UUID uniqueId, boolean b) {
+    }
 }
