@@ -1,0 +1,74 @@
+name: ServerCore
+version: 1.0.0
+main: dev.servercore.ServerCore
+api-version: 1.20
+description: Core plugin for a custom Minecraft server
+authors: [YourName]
+
+commands:
+  spawn:
+    description: Teleport to spawn
+    usage: /spawn
+  setspawn:
+    description: Set the spawn location
+    usage: /setspawn
+    permission: core.setspawn
+  warp:
+    description: Teleport to a warp
+    usage: /warp [name]
+  setwarp:
+    description: Create or update a warp
+    usage: /setwarp <name>
+    permission: core.setwarp
+  delwarp:
+    description: Delete a warp
+    usage: /delwarp <name>
+    permission: core.delwarp
+  mute:
+    description: Mute a player
+    usage: /mute <player> [duration] [reason]
+    permission: core.mute
+  unmute:
+    description: Unmute a player
+    usage: /unmute <player>
+    permission: core.mute
+  freeze:
+    description: Freeze or unfreeze a player
+    usage: /freeze <player>
+    permission: core.freeze
+  vanish:
+    description: Toggle vanish
+    usage: /vanish
+    permission: core.vanish
+  stats:
+    description: View player stats
+    usage: /stats [player]
+  rank:
+    description: Manage player ranks
+    usage: /rank set <player> <rank> | /rank list
+
+permissions:
+  core.setspawn:
+    description: Set server spawn
+    default: op
+  core.setwarp:
+    description: Create warps
+    default: op
+  core.delwarp:
+    description: Delete warps
+    default: op
+  core.mute:
+    description: Mute players
+    default: op
+  core.freeze:
+    description: Freeze players
+    default: op
+  core.vanish:
+    description: Use vanish
+    default: op
+  core.vanish.see:
+    description: See vanished players
+    default: op
+  core.rank.set:
+    description: Set player ranks
+    default: op

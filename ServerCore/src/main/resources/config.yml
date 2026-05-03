@@ -1,0 +1,34 @@
+messages:
+  join: "&8[&a+&8] {prefix} &f{player}"
+  quit: "&8[&c-&8] {prefix} &f{player}"
+  motd: |
+    &8&m---------&r &6Welcome to the Server&r &8&m---------
+    &eHello, &f{player}&e! Enjoy your stay.
+    &8&m---------------------------------
+  chat-format: "{prefix} &f{player}&7: {color}{message}"
+
+ranks:
+  default:
+    prefix: "&7[Member]&r"
+    color: "&f"
+    weight: 0
+  vip:
+    prefix: "&b[VIP]&r"
+    color: "&b"
+    weight: 10
+  mvp:
+    prefix: "&d[MVP]&r"
+    color: "&d"
+    weight: 20
+  mod:
+    prefix: "&a[Mod]&r"
+    color: "&a"
+    weight: 50
+  admin:
+    prefix: "&c[Admin]&r"
+    color: "&c"
+    weight: 100
+  owner:
+    prefix: "&4&l[Owner]&r"
+    color: "&4"
+    weight: 200
